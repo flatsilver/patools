@@ -1,9 +1,19 @@
-# 参考
-# https://gist.github.com/dichika/5273e7bd540ba3d5d551
-# https://gist.github.com/horihorio/9d7e557a8e4e2320916e
-# http://ja.wikipedia.org/wiki/%E5%8D%8A%E8%A7%92%E3%82%AB%E3%83%8A#.E5.8D.8A.E8.A7.92.E3.82.AB.E3.83.8A.E4.B8.80.E8.A6.A7
-
+#' Replace hankakukatakana with zenkakukatakana
+#'
+#' @param string
+#'
+#' @return string
+#' @export
+#'
+#' @examples
+#' string <- "ﾊﾝｶｸｶﾅﾊｱﾌﾞﾅｲ"
+#' hanka_to_zenkana(string)
 hankana_to_zenkana <- function(string) {
+  # 参考
+  # https://gist.github.com/dichika/5273e7bd540ba3d5d551
+  # https://gist.github.com/horihorio/9d7e557a8e4e2320916e
+  # http://ja.wikipedia.org/wiki/%E5%8D%8A%E8%A7%92%E3%82%AB%E3%83%8A#.E5.8D.8A.E8.A7.92.E3.82.AB.E3.83.8A.E4.B8.80.E8.A6.A7
+
   # chr 型へ変換
   if (!is.character(string)) string <- as.character(string)
 
