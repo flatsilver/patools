@@ -15,4 +15,4 @@ RoxygenNote: 7.0.2
 Imports: 
     stringr
 Suggests: 
-    testthat
+    testthat (>= 2.1.0)
