@@ -7,7 +7,7 @@
 hankana_to_zenkana(string)
 }
 \arguments{
-\item{string}{}
+\item{string}{string}
 }
 \value{
 string

@@ -1,6 +1,6 @@
 #' Replace hankakukatakana with zenkakukatakana
 #'
-#' @param string
+#' @param string string
 #'
 #' @return string
 #' @export
