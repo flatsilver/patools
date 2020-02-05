@@ -1,13 +1,13 @@
 Package: patools
-Title: What the Package Does (One Line, Title Case)
+Title: Tools to make a HR analyt's work easier
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Gimpei",
+           family = "Misono",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "ginpeimisonou@gmail.com")
+Description: Provides functions to help pre-processing and visualizing 
+  assessment data.
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
