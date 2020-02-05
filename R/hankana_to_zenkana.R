@@ -7,7 +7,7 @@
 #'
 #' @examples
 #' string <- "ﾊﾝｶｸｶﾅﾊｱﾌﾞﾅｲ"
-#' hanka_to_zenkana(string)
+#' hankana_to_zenkana(string)
 hankana_to_zenkana <- function(string) {
   # 参考
   # https://gist.github.com/dichika/5273e7bd540ba3d5d551

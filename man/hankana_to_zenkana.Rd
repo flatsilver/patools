@@ -17,5 +17,5 @@ Replace hankakukatakana with zenkakukatakana
 }
 \examples{
 string <- "ﾊﾝｶｸｶﾅﾊｱﾌﾞﾅｲ"
-hanka_to_zenkana(string)
+hankana_to_zenkana(string)
 }
