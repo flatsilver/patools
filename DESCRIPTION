@@ -8,6 +8,6 @@ Authors@R:
            email = "ginpeimisonou@gmail.com")
 Description: Provides functions to help pre-processing and visualizing 
   assessment data.
-License: What license it uses
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
