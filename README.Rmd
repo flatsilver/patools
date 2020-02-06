@@ -8,52 +8,34 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
+  fig.path = "man/figures/README-"
 )
 ```
 # patools
 
-<!-- badges: start -->
-<!-- badges: end -->
-
-The goal of patools is to ...
+Tools to make a HR analyt's work easier.
 
 ## Installation
 
-You can install the released version of patools from [CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("patools")
+```{r installation, eval = FALSE}
+# install.packages("remotes")
+remotes::install_github("flatsilver/patools")
 ```
 
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("flatsilver/patools")
-```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Replace 半角カナ with 全角カナ via `hankana_to_zenkana()`:
 
-```{r example}
+```{r}
 library(patools)
-## basic example code
+x <- "ﾊﾝｶｸｶﾅﾊｱﾌﾞﾅｲ"
+hankana_to_zenkana(x)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+Do not convert single-byte symbols and numbers.
 
-```{r cars}
-summary(cars)
+```{r}
+y <- "123."
+hankana_to_zenkana(y)
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!

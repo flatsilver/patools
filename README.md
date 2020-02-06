@@ -3,57 +3,30 @@
 
 # patools
 
-<!-- badges: start -->
-
-<!-- badges: end -->
-
-The goal of patools is to …
+Tools to make a HR analyt’s work easier.
 
 ## Installation
 
-You can install the released version of patools from
-[CRAN](https://CRAN.R-project.org) with:
-
 ``` r
-install.packages("patools")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("flatsilver/patools")
+# install.packages("remotes")
+remotes::install_github("flatsilver/patools")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Replace 半角カナ with 全角カナ via `hankana_to_zenkana()`:
 
 ``` r
 library(patools)
-## basic example code
+x <- "ﾊﾝｶｸｶﾅﾊｱﾌﾞﾅｲ"
+hankana_to_zenkana(x)
+#> [1] "ハンカクカナハアブナイ"
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+Do not convert single-byte symbols and numbers.
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+y <- "123."
+hankana_to_zenkana(y)
+#> [1] "123."
 ```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
