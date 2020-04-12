@@ -2,3 +2,5 @@
 
 export(hankana_to_zenkana)
 export(sign_to_int)
+importFrom(magrittr,"%>%")
+importFrom(rlang,"!!")
