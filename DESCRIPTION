@@ -16,6 +16,7 @@ Imports:
     stringr,
     rlang,
     dplyr,
-    magrittr
+    magrittr,
+    tidyr
 Suggests: 
     testthat (>= 2.1.0)
