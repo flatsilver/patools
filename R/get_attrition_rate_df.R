@@ -1,5 +1,25 @@
+#' Get attrition rate dataframe
+#'
+#' @param data dataframe
+#' @param entry_year string
+#' @param tenure integer
+#' @param attrition_flg interger
+#'
 #' @importFrom rlang "!!"
 #' @importFrom magrittr "%>%"
+#'
+#' @return dataframe
+#' @export
+#'
+#' @examples
+#' set.seed(123)
+#' df <- data.frame(
+#'   entry_year = rep(c("FY17", "FY18", "FY19"), 3),
+#'   tenure = c(0, 0, 0, 1, 1, 0, 2, 1, 0),
+#'   attrition_flg = sample(c(0, 1), 9, replace = TRUE),
+#'   stringsAsFactors = FALSE
+#' )
+#' get_attrition_rate_df(df, entry_year, tenure, attrition_flg)
 get_attrition_rate_df <- function(data, entry_year, tenure,  attrition_flg) {
   entry_year <- rlang::enquo(entry_year)
   tenure <- rlang::enquo(tenure)
